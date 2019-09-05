@@ -1,0 +1,84 @@
+/* line 26, ../sass/demo.scss */
+.head {
+  width: 100%;
+  height: 80px;
+  position: relative;
+}
+/* line 30, ../sass/demo.scss */
+.head .h_logo img {
+  width: 200px;
+  float: left;
+}
+/* line 34, ../sass/demo.scss */
+.head .head_item li {
+  float: left;
+  padding-right: 30px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* line 44, ../sass/demo.scss */
+.login {
+  float: right;
+}
+/* line 46, ../sass/demo.scss */
+.login li {
+  padding-right: 30px;
+  text-align: center;
+  float: left;
+  line-height: 80px;
+  height: 80px;
+}
+/* line 52, ../sass/demo.scss */
+.login li .red_packet {
+  font-size: 16px;
+  color: red;
+}
+/* line 56, ../sass/demo.scss */
+.login li .glyphicon-shopping-cart {
+  font-size: 16px;
+  color: #71777d;
+}
+/* line 60, ../sass/demo.scss */
+.login li #cat div, .login li #cat .head .search div p, .head .search div .login li #cat p,
+.login li #cat .head .search div input,
+.head .search div .login li #cat input {
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  border: 1px solid #d9dde1;
+  border-radius: 50px;
+}
+/* line 68, ../sass/demo.scss */
+.login li #cat div p, .head .search div .login li #cat p p,
+.head .search div .login li #cat input p {
+  line-height: 40px;
+}
+/* line 73, ../sass/demo.scss */
+.login li:hover {
+  cursor: pointer;
+  color: red;
+}
+/* line 79, ../sass/demo.scss */
+.head .search {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  min-width: 230px;
+  float: left;
+  position: relative;
+}
+/* line 86, ../sass/demo.scss */
+.head .search div, .head .search div p,
+.head .search div input {
+  height: 60px;
+}
+/* line 88, ../sass/demo.scss */
+.head .search div p,
+.head .search div input {
+  padding-right: 15px;
+  float: right;
+  border-bottom: 1px solid #d9dde1;
+}

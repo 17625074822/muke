@@ -1,0 +1,99 @@
+$border-color: red #d9dde1 #71777d;
+$head-height: 80px;
+$head-img-width: 200px;
+$head-li-font-size: 16px;
+$head-li-font-weight: 600;
+$head-icon-font-size: 16px;
+$head-icon-packet-color: red;
+$head-icon-shopping-cart-color: #71777d;
+$head-icon-shopping-cart-border: 1px solid #d9dde1;
+$head-icon-shopping-cart-height: 40px;
+$head-icon-shopping-cart-border-radius: 50px;
+$head-icon-shopping-cart-width: 100px;
+$head-search-min-width: 230px;
+$head-search-height: 60px;
+$head-search-padding-left: 15px;
+$hover-color: red #d9dde1 #71777d;
+$float: (
+  left: left,
+  right: right
+);
+$align: (
+  center: center,
+  left: left,
+  right: right
+);
+.head {
+  width: 100%;
+  height: $head-height;
+  position: relative;
+  .h_logo img {
+    width: $head-img-width;
+    float: map-get($float, left);
+  }
+  .head_item li {
+    float: map-get($float, left);
+    padding-right: 30px;
+    text-align: map-get($align, center);
+    line-height: $head-height;
+    font: {
+      size: $head-li-font-size;
+      weight: $head-li-font-weight;
+    }
+  }
+  @at-root .login {
+    float: map-get($float, right);
+    li {
+      padding-right: 30px;
+      text-align: map-get($align, center);
+      float: map-get($float, left);
+      line-height: $head-height;
+      height: $head-height;
+      .red_packet {
+        font-size: $head-icon-font-size;
+        color: $head-icon-packet-color;
+      }
+      .glyphicon-shopping-cart {
+        font-size: $head-icon-font-size;
+        color: $head-icon-shopping-cart-color;
+      }
+      #cat div {
+        width: $head-icon-shopping-cart-width;
+        display: inline-block;
+        vertical-align: middle;
+        height: $head-icon-shopping-cart-height;
+        border: $head-icon-shopping-cart-border {
+          radius: $head-icon-shopping-cart-border-radius;
+        }
+        p {
+          line-height: $head-icon-shopping-cart-height;
+        }
+      }
+    }
+    li:hover {
+      cursor: pointer;
+      color: nth($hover-color, 1);
+    }
+  }
+
+  .search {
+    height: $head-height;
+    line-height: $head-height;
+    text-align: map-get($align, center);
+    min-width: $head-search-min-width;
+    float: map-get($float, left);
+    position: relative;
+    div {
+      height: $head-search-height;
+      p,
+      input {
+        @extend div;
+        padding-right: 15px;
+        float: right;
+        border-bottom: 1px solid nth($border-color, 2);
+      }
+    }
+  }
+}
+
+

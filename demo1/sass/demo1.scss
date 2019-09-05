@@ -1,0 +1,35 @@
+$border-radius: 5px;
+$bg-colors: (
+  success: green,
+  info: blue,
+  warning: pink,
+  danger: red
+);
+$border-colors: green blue pink red;
+
+.alert {
+  border-radius: $border-radius;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  height: 50px;
+  border: 1px solid transparent;
+}
+
+.alert-success {
+  background-color: map-get($bg-colors, success);
+  border: 1px solid nth($border-colors, 4);
+}
+.alert-info {
+  background-color: map-get($bg-colors, info);
+  border: 1px solid nth($border-colors, 3);
+}
+
+.alert-warning {
+  background-color: map-get($bg-colors, warning);
+  border: 1px solid nth($border-colors, 2);
+}
+
+.alert-danger {
+  background-color: map-get($bg-colors, danger);
+  border: 1px solid nth($border-colors, 1);
+}
